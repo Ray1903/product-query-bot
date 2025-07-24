@@ -27,7 +27,6 @@ class ResponderAgent:
     def __call__(self, state):
         """
         Generates an answer using the Gemini model, given the docs, history, and query in the state.
-        Genera una respuesta usando Gemini, dado el contexto y el historial.
         """
         docs = state.get("docs", [])
         context = "\n".join([doc.page_content for doc in docs])
@@ -39,7 +38,7 @@ class ResponderAgent:
         )
 
         # Call Gemini model
-        # Llamada a Gemini
+
         response = self.model.generate_content(prompt)
         answer = response.text
 

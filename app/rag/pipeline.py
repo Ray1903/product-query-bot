@@ -25,7 +25,7 @@ class RAGPipeline:
         self.responder_agent = ResponderAgent()
 
         # New StateGraph constructor with state_schema
-        # Nuevo constructor de StateGraph con state_schema
+      
         self.graph = StateGraph(
             state_schema=BotState,
             input_keys=["user_id", "query"],
@@ -33,7 +33,7 @@ class RAGPipeline:
         )
 
         # Add nodes to the graph
-        # Añadir nodos al grafo
+
         self.graph.add_node("retriever", self.retriever_agent)
         self.graph.add_node("memory", self.memory_agent)
         self.graph.add_node("responder", self.responder_agent)
