@@ -1,5 +1,7 @@
 # Product-Query Bot
 
+**Video demo:** [https://youtu.be/rZiE545tC80](https://youtu.be/rZiE545tC80)
+
 A Retrieval-Augmented Generation (RAG) chatbot for answering product-related queries using FastAPI, Gemini (Google Generative AI), and FAISS vector search.
 
 ## Features
